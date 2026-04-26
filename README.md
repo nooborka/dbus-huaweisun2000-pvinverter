@@ -1,3 +1,4 @@
+# Repo forked form kcbam/dbus-huaweisun2000-pvinverter - TCP connection stability adjustments
 # dbus-huaweisun2000-pvinverter
 
 D-Bus driver for Victron Cerbo GX / Venus OS for Huawei SUN 2000 inverters
@@ -15,7 +16,7 @@ additional hardware needs to be purchased and the inverter does not need to be c
 To further use the data, the mqtt broker from Venus OS can be used.
 
 ## Todo
-
+- [ ] Add Timeout, retries to settings menu
 - [ ] Display alarm values
 - [ ] more values: temperature, efficiency
 - [ ] clean code
@@ -31,13 +32,13 @@ To further use the data, the mqtt broker from Venus OS can be used.
 2. Download and run the installation / update script:
 
    ```bash
-   wget -qO- https://raw.githubusercontent.com/kcbam/dbus-huaweisun2000-pvinverter/main/setup/install_or_update.sh | bash
+   wget -qO- https://raw.githubusercontent.com/nooborka/dbus-huaweisun2000-pvinverter/main/setup/install_or_update.sh | bash
    ```
 
    This will download the latest release and install it. If you want to install the development version, use:
 
    ```bash
-   wget -qO- https://raw.githubusercontent.com/kcbam/dbus-huaweisun2000-pvinverter/main/setup/install_or_update.sh | bash -s dev
+   wget -qO- https://raw.githubusercontent.com/nooborka/dbus-huaweisun2000-pvinverter/main/setup/install_or_update.sh | bash -s dev
    ```
 
 3. Edit the settings in the *V1* Remote Console under 'Settings -> PV inverters -> Huawei SUN2000'
