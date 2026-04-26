@@ -50,7 +50,8 @@ alert1Readable = {
 
 class ModbusDataCollector2000:
     def __init__(self, logger, modbus_version, host='192.168.200.1', port=6607, modbus_unit=0, pcf_override=0.995, system_type=0):
-        self.invSun2000 = inverter.Sun2000(logger=logger, host=host, port=port, modbus_unit=modbus_unit, timeout=20)
+        self.invSun2000 = inverter.Sun2000(logger=logger, host=host, port=port, modbus_unit=modbus_unit, timeout=3)
+        # TODO: Add timeout and retries to settings
         self.logger = logger
         self.pcf_override = pcf_override
         self.system_type = system_type
