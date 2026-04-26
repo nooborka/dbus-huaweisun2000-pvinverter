@@ -2,7 +2,7 @@
 
 ## Notes
 
-* GitHub: <https://github.com/kcbam/dbus-huaweisun2000-pvinverter/>
+* GitHub: <https://github.com/nooborka/dbus-huaweisun2000-pvinverter/>
 
 ## v1.6.0
 
