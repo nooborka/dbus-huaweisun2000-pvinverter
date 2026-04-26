@@ -2,6 +2,7 @@
 # Please adhere to flake8 --ignore E501,E402
 
 import time
+import socket
 
 from pymodbus.client.sync import ModbusTcpClient
 from pymodbus.exceptions import ModbusIOException, ConnectionException
@@ -20,7 +21,7 @@ class Sun2000:
         self.logger = logger
         self.wait = wait
         self.modbus_unit = modbus_unit
-        self.inverter = ModbusTcpClient(host, port, timeout=timeout)
+        self.inverter = ModbusTcpClient(host, port, timeout=timeout, retries=retries, socket_options=socket_options)
 
     def connect(self):
         if not self.isConnected():
